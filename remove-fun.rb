@@ -41,7 +41,7 @@ word_array.each do |word|
     next unless candidate
 
     letters_in_incorrect_position_indexed.each do |index, letter|
-        candidate = (word.include? letter) and (word[index] != letter)
+        candidate = (word.include? letter) && (word[index] != letter)
         break unless candidate
     end
 
